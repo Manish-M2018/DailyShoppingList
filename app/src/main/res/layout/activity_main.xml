@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_design"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:gravity="center"
+                android:layout_marginTop="200dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Email"
+                android:background="@drawable/ed_design"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:id="@+id/email_login"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Password"
+                android:background="@drawable/ed_design"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:id="@+id/password_login"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Log In"
+                android:background="@drawable/ed_design"
+                android:padding="6dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:id="@+id/btn_login"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Don't have an account sign up here"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:id="@+id/signup_text"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
